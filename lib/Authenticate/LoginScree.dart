@@ -48,8 +48,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   Container(
                     width: size.width / 1.1,
                     child: Text(
-                      "Welcome",
+                      "Bienvenue",
                       style: TextStyle(
+                        color: Colors.deepPurple[700],
                         fontSize: 34,
                         fontWeight: FontWeight.bold,
                       ),
@@ -58,7 +59,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   Container(
                     width: size.width / 1.1,
                     child: Text(
-                      "Sign In to Contiue!",
+                      "Veuillez-vous connecter ;)",
                       style: TextStyle(
                         color: Colors.grey[700],
                         fontSize: 25,
@@ -80,6 +81,8 @@ class _LoginScreenState extends State<LoginScreen> {
                       width: size.width,
                       alignment: Alignment.center,
                       child: field(size, "password", Icons.lock, _password),
+
+
                     ),
                   ),
                   SizedBox(
@@ -92,10 +95,12 @@ class _LoginScreenState extends State<LoginScreen> {
                   GestureDetector(
                     onTap: () => Navigator.of(context).push(
                         MaterialPageRoute(builder: (_) => CreateAccount())),
+
+
                     child: Text(
-                      "Create Account",
+                      "Inscription 😀 ",
                       style: TextStyle(
-                        color: Colors.blue,
+                        color: Colors.black,
                         fontSize: 16,
                         fontWeight: FontWeight.w500,
                       ),
@@ -139,11 +144,11 @@ class _LoginScreenState extends State<LoginScreen> {
           width: size.width / 1.2,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(5),
-            color: Colors.blue,
+            color: Colors.deepPurple,
           ),
           alignment: Alignment.center,
           child: Text(
-            "Login",
+            "Connexion",
             style: TextStyle(
               color: Colors.white,
               fontSize: 18,
