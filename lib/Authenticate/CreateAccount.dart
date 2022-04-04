@@ -1,6 +1,7 @@
-import 'package:chat_app/Authenticate/Methods.dart';
+//import 'package:chat_app/Authenticate/Methods.dart';
 import 'package:flutter/material.dart';
 import '../Screens/HomeScreen.dart';
+import 'Methods.dart';
 
 class CreateAccount extends StatefulWidget {
   @override

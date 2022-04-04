@@ -1,7 +1,11 @@
-import 'package:chat_app/Authenticate/CreateAccount.dart';
-import 'package:chat_app/Screens/HomeScreen.dart';
-import 'package:chat_app/Authenticate/Methods.dart';
+//import 'package:chat_app/Authenticate/CreateAccount.dart';
+//import 'package:chat_app/Screens/HomeScreen.dart';
+//import 'package:chat_app/Authenticate/Methods.dart';
 import 'package:flutter/material.dart';
+
+import '../Screens/HomeScreen.dart';
+import 'CreateAccount.dart';
+import 'Methods.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
