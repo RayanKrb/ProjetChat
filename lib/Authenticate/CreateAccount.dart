@@ -40,22 +40,23 @@ class _CreateAccountState extends State<CreateAccount> {
                         icon: Icon(Icons.arrow_back_ios), onPressed: () {}),
                   ),
                   SizedBox(
-                    height: size.height / 50,
+                    height: size.height / 30,
                   ),
                   Container(
-                    width: size.width / 1.1,
+                    width: size.width / 1.7,
                     child: Text(
-                      "Welcome",
+                      "S'inscrire",
                       style: TextStyle(
+                        color: Colors.deepPurple,
                         fontSize: 34,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),
                   Container(
-                    width: size.width / 1.1,
+                    width: size.width / 2,
                     child: Text(
-                      "Create Account to Contiue!",
+                      "Inscrivez-vous 😀",
                       style: TextStyle(
                         color: Colors.grey[700],
                         fontSize: 20,
@@ -71,20 +72,20 @@ class _CreateAccountState extends State<CreateAccount> {
                     child: Container(
                       width: size.width,
                       alignment: Alignment.center,
-                      child: field(size, "Name", Icons.account_box, _name),
+                      child: field(size, "Pseudo", Icons.account_box, _name),
                     ),
                   ),
                   Container(
                     width: size.width,
                     alignment: Alignment.center,
-                    child: field(size, "email", Icons.account_box, _email),
+                    child: field(size, "Entrer votre email", Icons.account_box, _email),
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 18.0),
                     child: Container(
                       width: size.width,
                       alignment: Alignment.center,
-                      child: field(size, "password", Icons.lock, _password),
+                      child: field(size, "Mot de passe à 6 caractères minimum", Icons.lock, _password),
                     ),
                   ),
                   SizedBox(
@@ -96,10 +97,10 @@ class _CreateAccountState extends State<CreateAccount> {
                     child: GestureDetector(
                       onTap: () => Navigator.pop(context),
                       child: Text(
-                        "Login",
+                        "Connexion",
                         style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 16,
+                          color: Colors.deepPurple,
+                          fontSize: 18,
                           fontWeight: FontWeight.w500,
                         ),
                       ),
@@ -145,11 +146,11 @@ class _CreateAccountState extends State<CreateAccount> {
           width: size.width / 1.2,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(5),
-            color: Colors.blue,
+            color: Colors.deepPurple,
           ),
           alignment: Alignment.center,
           child: Text(
-            "Create Account",
+            "Inscription",
             style: TextStyle(
               color: Colors.white,
               fontSize: 18,
