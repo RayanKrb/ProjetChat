@@ -24,91 +24,91 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       body: isLoading
           ? Center(
-              child: Container(
-                height: size.height / 20,
-                width: size.height / 20,
-                child: CircularProgressIndicator(),
-              ),
-            )
+        child: Container(
+          height: size.height / 20,
+          width: size.height / 20,
+          child: CircularProgressIndicator(),
+        ),
+      )
           : SingleChildScrollView(
-              child: Column(
-                children: [
-                  SizedBox(
-                    height: size.height / 20,
-                  ),
-                  Container(
-                    alignment: Alignment.centerLeft,
-                    width: size.width / 0.5,
-                    child: IconButton(
-                        icon: Icon(Icons.arrow_back_ios), onPressed: () {}),
-                  ),
-                  SizedBox(
-                    height: size.height / 50,
-                  ),
-                  Container(
-                    width: size.width / 1.1,
-                    child: Text(
-                      "Bienvenue",
-                      style: TextStyle(
-                        color: Colors.deepPurple[700],
-                        fontSize: 34,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                  Container(
-                    width: size.width / 1.1,
-                    child: Text(
-                      "Veuillez-vous connecter ;)",
-                      style: TextStyle(
-                        color: Colors.grey[700],
-                        fontSize: 25,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    height: size.height / 10,
-                  ),
-                  Container(
-                    width: size.width,
-                    alignment: Alignment.center,
-                    child: field(size, "email", Icons.account_box, _email),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 18.0),
-                    child: Container(
-                      width: size.width,
-                      alignment: Alignment.center,
-                      child: field(size, "password", Icons.lock, _password),
-
-
-                    ),
-                  ),
-                  SizedBox(
-                    height: size.height / 10,
-                  ),
-                  customButton(size),
-                  SizedBox(
-                    height: size.height / 40,
-                  ),
-                  GestureDetector(
-                    onTap: () => Navigator.of(context).push(
-                        MaterialPageRoute(builder: (_) => CreateAccount())),
-
-
-                    child: Text(
-                      "Inscription 😀 ",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  )
-                ],
+        child: Column(
+          children: [
+            SizedBox(
+              height: size.height / 20,
+            ),
+            Container(
+              alignment: Alignment.centerLeft,
+              width: size.width / 0.5,
+              child: IconButton(
+                  icon: Icon(Icons.arrow_back_ios), onPressed: () {}),
+            ),
+            SizedBox(
+              height: size.height / 50,
+            ),
+            Container(
+              width: size.width / 1.1,
+              child: Text(
+                "Bienvenue",
+                style: TextStyle(
+                  color: Colors.deepPurple[700],
+                  fontSize: 34,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
+            Container(
+              width: size.width / 1.1,
+              child: Text(
+                "Veuillez-vous connecter ;)",
+                style: TextStyle(
+                  color: Colors.grey[700],
+                  fontSize: 25,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+            ),
+            SizedBox(
+              height: size.height / 10,
+            ),
+            Container(
+              width: size.width,
+              alignment: Alignment.center,
+              child: field(size, "email", Icons.account_box, _email),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 18.0),
+              child: Container(
+                width: size.width,
+                alignment: Alignment.center,
+                child: field(size, "password", Icons.lock, _password),
+
+
+              ),
+            ),
+            SizedBox(
+              height: size.height / 10,
+            ),
+            customButton(size),
+            SizedBox(
+              height: size.height / 40,
+            ),
+            GestureDetector(
+              onTap: () => Navigator.of(context).push(
+                  MaterialPageRoute(builder: (_) => CreateAccount())),
+
+
+              child: Text(
+                "Inscription 😀 ",
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 16,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
 
